@@ -1,0 +1,25 @@
+﻿http://localhost/abc => Request did not match current rule 'LowerCaseRule'.
+Current url is http://localhost:80/abc
+Request matched current UrlRewriteRule 'Enforce https'.
+Location header '/https://localhost/abc' with status code '301'.
+-----
+https://localhost/abc => Request did not match current rule 'LowerCaseRule'.
+Current url is https://localhost:443/abc
+Request did not match current rule 'Enforce https'.
+Current url is https://localhost:443/abc
+-----
+https://localhost/aBc => Request matched current UrlRewriteRule 'LowerCaseRule'.
+Location header '/https://localhost/abc' with status code '301'.
+-----
+http://localhost/tadabcAda => Request matched current UrlRewriteRule 'LowerCaseRule'.
+Location header '/https://localhost/tadabcada' with status code '301'.
+-----
+http://localhost/ => Request did not match current rule 'LowerCaseRule'.
+Current url is http://localhost:80/
+Request matched current UrlRewriteRule 'Enforce https'.
+Location header '/https://localhost/' with status code '301'.
+-----
+http://localhost/tada => Request did not match current rule 'LowerCaseRule'.
+Current url is http://localhost:80/tada
+Request matched current UrlRewriteRule 'Enforce https'.
+Location header '/https://localhost/tada' with status code '301'.

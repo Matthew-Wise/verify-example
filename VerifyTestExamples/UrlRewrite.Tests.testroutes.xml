@@ -1,0 +1,18 @@
+<rewrite>
+    <rules>
+        <rule name="LowerCaseRule" stopProcessing="false">
+            <match url="[A-Z]" ignoreCase="false" />
+            <action type="Redirect"
+                    url="https://{ToLower:{HTTP_HOST}{HTTP_URL}}"
+                    redirectType="Permanent" />
+        </rule>
+        <rule name="Enforce https" stopProcessing="false">
+            <match url="(.*)" />
+            <conditions>
+                <add input="{HTTPS}" pattern="^OFF$" redirectType="Permanent"/>
+            </conditions>
+            <action type="Redirect" url="https://{HTTP_HOST}{REQUEST_URI}" appendQueryString="false" />
+        </rule>
+        
+    </rules>
+</rewrite>

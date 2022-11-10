@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerifyTestExamples", "VerifyTestExamples\VerifyTestExamples.csproj", "{BF0E8ABF-6C75-48DE-8F78-AA87A2BCDDCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleWebApp", "ExampleWebApp\ExampleWebApp.csproj", "{F3231F7B-549C-4138-A35D-7A457462587F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF0E8ABF-6C75-48DE-8F78-AA87A2BCDDCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0E8ABF-6C75-48DE-8F78-AA87A2BCDDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0E8ABF-6C75-48DE-8F78-AA87A2BCDDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0E8ABF-6C75-48DE-8F78-AA87A2BCDDCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3231F7B-549C-4138-A35D-7A457462587F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3231F7B-549C-4138-A35D-7A457462587F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3231F7B-549C-4138-A35D-7A457462587F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3231F7B-549C-4138-A35D-7A457462587F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
